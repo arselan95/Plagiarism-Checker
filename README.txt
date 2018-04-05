@@ -31,22 +31,3 @@ use: HashTable - put,contains, get methods
 	
 	-> This algorithm's worst case would be that if the target file has everything matching from the corpus file, but that worst case would still be O(n+m) where m is the number of words
 	   in corpus file.
-
-2.LandOfCandy.java : main class 
-  Cell.java        : class that makes a cell 
-
-use: HashMap
-
--> //explain algorithm
-	1. Cell class
-	- this class creates a cell and assigns candies to random points.
-	- if player gets a candy he is rewarded 100 points.
-	
-	2. LandOfCandy class
-	-We use a Hashmap<Cell,Integer> in which cell (the point); for ex:(a,b,c) is a Key which also consists of points.
-	- We use .containsKey() to check if the player is rewarded points or not. Which is O(1).
-	
--> // Worst case
-	-> As we use a HashMap, the O of remove(), searching(), and inserting is O(1).
-	-> Moreover, there are no nested For loops so the application runs at O(1).
-	-> I think worst case for this algorithm would be if player gets candy all the time so it has to update hashmap each and every time and add 100 points on every move.
