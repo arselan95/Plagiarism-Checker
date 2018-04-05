@@ -31,3 +31,5 @@ use: HashTable - put,contains, get methods
 	
 	-> This algorithm's worst case would be that if the target file has everything matching from the corpus file, but that worst case would still be O(n+m) where m is the number of words
 	   in corpus file.
+
+-> The commented lines in main method are for the command line arguments
